@@ -234,13 +234,39 @@ body{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1090) {
     .contenedor {
         grid-template-areas: 
             "header_bann header_bann header_bann header_bann"
             "menu menu menu  menu"
             "galeria galeria galeria  galeria"
             "footer footer footer footer";
+    }
+
+    .menu{
+
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        
+        
+
+    }
+
+    .menu .menu__item{
+
+        
+        justify-content: center;
+        align-content: center;
+        width: 100px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px 10px 20px ;
+        padding: 5px;
+
     }
 
     

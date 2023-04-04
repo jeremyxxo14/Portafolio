@@ -31,17 +31,17 @@ body{
     margin: 0px 0px 0px 55px;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, auto);
     grid-template-areas: 
-        "header_bann header_bann header_bann"
-        "menu menu menu "    
-        "header header header "
-        "container  container container "
-        "productos productos productos "
-        "sbrnosotros sbrnosotros  sbrnosotros"
-        "containerfluid containerfluid  containerfluid"
-        "footer footer footer ";
+        "header_bann header_bann header_bann header_bann"
+        "menu menu  menu menu "    
+        "header header  header header "
+        "container  container container container"
+        "productos productos productos  productos"
+        "sbrnosotros sbrnosotros  sbrnosotros sbrnosotros"
+        "containerfluid containerfluid  containerfluid containerfluid"
+        "footer footer footer footer";
 }
 
 .contenedor> .contenedor .header_bann,
@@ -116,7 +116,7 @@ body{
 }
 
 .contactos {
-    margin-right: 20px;
+    
     margin-left: auto;
     
 }
@@ -190,7 +190,6 @@ body{
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
     display: inline-block;
     padding: 10px 10px;
-    margin: 4px 50px 0px 150px ;
     text-decoration:none ;
     font-size: 20px;
     transition: .8s ease all;
@@ -398,20 +397,67 @@ resize: none;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .contenedor {
         width: 95%;
         max-width: 10000px;
         margin: 0px 0px 0px 20px;
         grid-template-areas: 
-            "header_bann header_bann header_bann "
-            "menu menu menu "
-            "header header header "
-            "container container container "
-            "productos productos  productos "
-            "sbrnosotros sbrnosotros sbrnosotros "
-            "containerfluid containerfluid containerfluid "
-            "footer footer footer ";
+            "header_bann  header_bann header_bann header_bann "
+            "menu menu menu menu "
+            "header header header  header"
+            "container container container  container"
+            "productos productos productos productos"
+            " sbrnosotros sbrnosotros sbrnosotros sbrnosotros "
+            "containerfluid containerfluid containerfluid containerfluid "
+            "footer footer  footer footer ";
+    }
+
+    .menu{
+
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        
+        
+
+    }
+
+    .menu .menu__item{
+
+        
+        justify-content: center;
+        align-content: center;
+        width: 100px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px 10px 20px ;
+        padding: 5px;
+
+    }
+
+    .container .header_bann{
+
+        
+        float: center;
+        padding: 30px;
+
+    }
+
+    .header_bann a.contactos_bann{
+
+        font-size: 15px;
+        float: right;
+
+    }
+
+    .container .contactos{
+
+        float: inline-start;
+
     }
 
     body{
