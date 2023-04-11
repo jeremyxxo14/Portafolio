@@ -361,6 +361,7 @@ body[data-bs-theme="light"] a{
     z-index: 2;
     text-transform: uppercase;
     margin-bottom: 20px;
+    
 }
 
 .subtitulo__texto {
@@ -391,20 +392,9 @@ body[data-bs-theme="light"] a{
     margin-bottom: 50px;
 }
 
-#nosotros1{
-
-    margin: 30px;
-
-
-}
-
-
-
-
 .nosotros__enlace {
     display: inline-block;
     margin-top: 40px;
-    
     font-weight: 700;
     border-bottom: 1px solid transparent;
     transition: .3s ease all;
@@ -417,11 +407,78 @@ body[data-bs-theme="light"] a{
     border-bottom: 1px solid rgba(0, 153, 173, 0.81);
 }
 
+/*nosotros1*/
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-wrapper {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.text-wrapper p{
+    text-align: justify;
+    
+}
+
+.image-wrapper{
+
+    margin-left: 100px;
+
+}
+
+.nos_sub{
+
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+
+
+.content-wrapper2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-wrapper2 {
+    text-align: center;
+    
+}
+
+.text-wrapper2 p{
+    text-align: justify;
+    
+}
+
+.image-wrapper2 {  
+    text-align: center;  
+    margin-right: 100px;
+}
+
+
+
+
+
 .nos_iconos {
 
-    
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
 
 }
 
@@ -436,7 +493,7 @@ body[data-bs-theme="light"] a{
 .form_con{
 
     border: 2px solid #333;
-    padding: 10px;
+    padding: 5px 20px 20px 20px;
     border-radius: 3px;
     box-shadow: -2px -4px 17px 6px rgba(0, 153, 173, 0.81);
 
@@ -538,6 +595,28 @@ resize: none;
 
         float: inline-start;
 
+    }
+
+    figure {
+        
+        display: block;
+        text-align: center;
+    }
+    
+    figcaption .content-wrapper{
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+
+    
+    
+    .nos_iconos {
+        
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        
     }
 
     body{
