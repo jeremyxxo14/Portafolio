@@ -182,12 +182,27 @@ body[data-bs-theme="light"] a{
 
 /*header_bann*/
 
+.lgo_tit {
+    display: flex;
+    align-items: center;
+}
+
 
 .header_bann .logo-grande {
     float: left;
     margin-right: 20px;
     width: 70px;
     height: 70px;
+}
+
+.bann-titulo {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .contactos {
@@ -197,9 +212,9 @@ body[data-bs-theme="light"] a{
 }
 
 .contactos_bann {
-    display: block;
+    display: flex;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 20px;
     font-size: 18px;
 }
@@ -304,7 +319,7 @@ body[data-bs-theme="light"] a{
     text-decoration: none;
     transition: .5s;
     transform: scale(1.2);
-    background-color: rgba(0, 153, 173, 0.81);
+    background-color: rgba(0, 197, 223, 0.81);
     color: #f1fcff;
     border: 2px solid rgba(0, 137, 155, 0.856);
     
@@ -316,10 +331,11 @@ body[data-bs-theme="light"] a{
 
 .header {
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-image: url(../img/DALL·E\ 2023-04-04\ 11.12.58\ -\ wallpaper\ para\ celular\ s20+\ de\ el\ espacio\ en\ donde\ se\ vea\ la\ tierra\ y\ la\ luna\ .png);
     background-position: center;
     background-size: cover;
+    
     background-repeat: no-repeat;
     
 }
@@ -331,20 +347,7 @@ body[data-bs-theme="light"] a{
     border: 10px solid rgba(0, 153, 173, 0.81);
 }
 
-.header__titulo {
 
-    
-    font-size: 90px;
-    font-weight: 400;
-    height: 11em;
-    font-family: 'Noto Serif', serif;
-    font-style: italic;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-}
 
 
 
@@ -430,11 +433,13 @@ article {
 
 .text-wrapper p{
     text-align: justify;
+    font-stretch: condensed;
+    font-size: small;
     
 }
 
 .image-wrapper{
-
+    text-align: center;
     margin-left: 100px;
 
 }
@@ -462,9 +467,13 @@ article {
 }
 
 .text-wrapper2 p{
+
     text-align: justify;
+    font-stretch: condensed;
+    font-size: small;
     
 }
+
 
 .image-wrapper2 {  
     text-align: center;  
