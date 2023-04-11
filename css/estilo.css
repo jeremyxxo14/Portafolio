@@ -28,6 +28,8 @@ body[data-bs-theme="dark"] .header_bann{
 body[data-bs-theme="dark"] .menu__item{
     
     box-shadow: 1px 1px 15px 17px rgba(87,0,0,0.81);
+    background-color: #860101;
+    border: 2px solid #ff0000;
     
     
 }
@@ -35,7 +37,8 @@ body[data-bs-theme="dark"] .menu__item{
 body[data-bs-theme="dark"] .menu__item:hover{
     
     color: #000000;
-    background-color: rgba(116, 0, 0, 0.81);
+    border: 2px solid #a80000;
+    background-color: #be0202;
     
 }
 
@@ -44,6 +47,24 @@ body[data-bs-theme="dark"] a{
     color: #fff;
     
 }
+
+body[data-bs-theme="dark"] .header{
+    
+    background-image: url(../img/siora-photography-228Ug-nLxx8-unsplash.jpg);
+    color: #fff;
+    
+}
+
+body[data-bs-theme="dark"] .header_bann{
+    
+    background-image: linear-gradient(to bottom, rgba(170, 0, 0, 0.81), rgba(61, 0, 0, 0.81));
+    color: #fff;
+    border-bottom: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    
+}
+
 
 body[data-bs-theme="dark"] .header__fondo{
     
@@ -205,8 +226,11 @@ body[data-bs-theme="light"] a{
     text-align: center;
     font-family: 'Noto Serif', serif;
     font-style: italic;
+    background-image: linear-gradient(to bottom, rgba(0, 153, 173, 0.856), rgba(0, 153, 173, 0.753), rgba(82, 229, 248, 0.81), rgb(203, 247, 247));
     padding: 10px 20px;
-    -moz-border-radius: 50px;
+    border-bottom: 4px solid rgba(207, 249, 255, 0.856);
+    border-left: 2px solid rgba(245, 254, 255, 0.856);
+    border-right: 2px solid rgba(237, 253, 255, 0.856);
     border-radius: 15px; 
     box-shadow: 1px 1px 15px 17px rgba(0, 153, 173, 0.81);
 
@@ -271,15 +295,19 @@ body[data-bs-theme="light"] a{
     font-size: 26px;
     transition: .8s ease all;   
     box-shadow: 2px -4px 30px 6px rgba(0, 153, 173, 0.81);
+    border: 2px solid rgba(0, 225, 255, 0.856);
+    
 }
 
 .menu__item:hover {
     
     text-decoration: none;
-    transition: 1.1s;
+    transition: .5s;
     transform: scale(1.2);
     background-color: rgba(0, 153, 173, 0.81);
     color: #f1fcff;
+    border: 2px solid rgba(0, 137, 155, 0.856);
+    
 }
 
 
