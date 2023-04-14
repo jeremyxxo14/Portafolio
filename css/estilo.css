@@ -72,15 +72,49 @@ body[data-bs-theme="dark"] .header__fondo{
     
 }
 
+body[data-bs-theme="dark"] .btn-productos{
+    
+    box-shadow: 1px 1px 15px 17px rgba(87,0,0,0.81);
+    background-color: #860101;
+    border: 2px solid #ff0000;
+    
+    
+}
+
+body[data-bs-theme="dark"] .btn-productos:hover{
+    
+    color: #000000;
+    border: 2px solid #a80000;
+    background-color: #be0202;
+    
+}
+
 body[data-bs-theme="dark"] .form_con{
     
     box-shadow: -2px -4px 17px 6px rgba(87,0,0,0.81);
+    background-color: #202020;
+    
     
 }
+
+body[data-bs-theme="dark"] .contactame{
+    
+    
+    background-image: url(/img/wave\ \(2\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
 
 body[data-bs-theme="dark"] .footer{
     
     box-shadow: 1px 1px 15px 17px rgba(87,0,0,0.81);
+    border-top: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    background-image: linear-gradient(to bottom, rgba(170, 0, 0, 0.81), rgba(61, 0, 0, 0.81));
     
 }
 
@@ -101,11 +135,12 @@ body[data-bs-theme="light"] a{
 
 .contenedor {
 
-    width: 95%;
+    width: 100%;
     max-width: 10000px;
-    margin: 0px 20px 0px 40px;
     display: grid;
+    
     grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, auto);
     grid-template-areas: 
@@ -113,9 +148,9 @@ body[data-bs-theme="light"] a{
         "menu menu  menu menu "    
         "header header  header header "
         "container  container container container"
-        "productos productos productos  productos"
-        "sbrnosotros sbrnosotros  sbrnosotros sbrnosotros"
-        "containerfluid containerfluid  containerfluid containerfluid"
+        "proyect_view proyect_view proyect_view  proyect_view"
+        "sobre_mi sobre_mi  sobre_mi sobre_mi"
+        "contactame contactame  contactame contactame"
         "footer footer footer footer";
 }
 
@@ -123,9 +158,9 @@ body[data-bs-theme="light"] a{
 .contenedor .header,
 .contenedor .menu,
 .contenedor .container,
-.contenedor .productos,
-.contenedor .sbrnosotros,
-.contenedor .container-fluid,
+.contenedor .proyect_view,
+.contenedor .sobre_mi,
+.contenedor .contactame,
 .contenedor .footer,
 
 .contenedor .header_bann{
@@ -155,21 +190,21 @@ body[data-bs-theme="light"] a{
 
 }
 
-.contenedor .sbrnosotros {
+.contenedor .sobre_mi {
 
-    grid-area: sbrnosotros;
+    grid-area: sobre_mi;
 
 
 }
 
-.contenedor .productos{
+.contenedor .proyect_view{
 
-    grid-area: productos;
+    grid-area: proyect_view;
 }
 
-.contenedor .container-fluid {
+.contenedor .contactame {
 
-    grid-area: containerfluid;
+    grid-area: contactame;
 
 }
 
@@ -182,86 +217,100 @@ body[data-bs-theme="light"] a{
 
 /*header_bann*/
 
-.lgo_tit {
+.navbar_mobile{
+
+    display: none;
+
+}
+
+.flex_ban {
     display: flex;
     align-items: center;
 }
 
+.lgo_tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
 
-.header_bann .logo-grande {
-    float: left;
-    margin-right: 20px;
-    width: 70px;
-    height: 70px;
+.contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.inicio_sesion {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo_grande {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    transition: .8s ease all; 
+
+}
+
+.logo_grande:hover{
+
+    text-decoration: none;
+    transition: .5s;
+    transform: scale(1.2);
+
 }
 
 .bann-titulo {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 25px;
     font-family: 'Noto Serif', serif;
     font-style: italic;
     align-items: center;
-    flex-direction: column;
-
-}
-
-.contactos {
-    
-    margin-left: auto;
-    
 }
 
 .contactos_bann {
     display: flex;
+    flex-direction: center;
     text-decoration: none;
     font-weight: 300;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 12px;
+    margin-right: 25px;
+    margin-left: 100px;
 }
 
-.header_bann img{
-    
+.contactos img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px 5px 5px;
+}
+
+.inicio_sesion img {
     width: 25px;
     height: 25px;
-    margin: 0px 0px 0px 0px;
-    
+    margin: 0px 5px 10px 5px;
 }
 
 
-.header_bann .contactos a:link, a:visited, a:active {
-    text-decoration:none ;
-    
-}
-
-
-.header_bann{
-
+.header_bann {
     width: 100%;
     z-index: 999;
     text-align: center;
-    font-family: 'Noto Serif', serif;
-    font-style: italic;
+    font-family: 'Cinzel', serif;
     background-image: linear-gradient(to bottom, rgba(0, 153, 173, 0.856), rgba(0, 153, 173, 0.753), rgba(82, 229, 248, 0.81), rgb(203, 247, 247));
     padding: 10px 20px;
     border-bottom: 4px solid rgba(207, 249, 255, 0.856);
     border-left: 2px solid rgba(245, 254, 255, 0.856);
     border-right: 2px solid rgba(237, 253, 255, 0.856);
-    border-radius: 15px; 
+    border-radius: 15px;
     box-shadow: 1px 1px 15px 17px rgba(0, 153, 173, 0.81);
-
 }
-
-.header_bann .inicio_sesion {
-
-    float: right;
-    margin-bottom: 20px;
-    margin: 12px 25px 0px 30px ;
-    padding: 5px;
-}
-
 
 .inicio_sesion a.ini_sesion {
-    
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
@@ -269,20 +318,8 @@ body[data-bs-theme="light"] a{
     font-size: 15px;
 }
 
-
-/*contactos_bar*/
-
-.contactos_bann{
-
-    background-color: var(--White);
-    background: var(--maroon);
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
-    display: inline-block;
-    padding: 10px 10px;
-    text-decoration:none ;
-    font-size: 20px;
-    transition: .8s ease all; 
-    
+.btn {
+    margin-left: 20px;
 }
 
 /*Navbar*/
@@ -302,7 +339,7 @@ body[data-bs-theme="light"] a{
 .menu__item {
 
     display: inline-block;
-    margin: 50px;
+    margin: 20px;
     box-shadow: 30px;
     padding: 10px 30px;
     border-radius: 5px;
@@ -331,20 +368,33 @@ body[data-bs-theme="light"] a{
 
 .header {
     width: 100%;
-    height: 80%;
-    background-image: url(../img/DALL·E\ 2023-04-04\ 11.12.58\ -\ wallpaper\ para\ celular\ s20+\ de\ el\ espacio\ en\ donde\ se\ vea\ la\ tierra\ y\ la\ luna\ .png);
+    height: 100%;
     background-position: center;
     background-size: cover;
-    
+    background-image: url(/img/DALL·E\ 2023-04-04\ 11.12.58\ -\ wallpaper\ para\ celular\ s20+\ de\ el\ espacio\ en\ donde\ se\ vea\ la\ tierra\ y\ la\ luna\ .png);
     background-repeat: no-repeat;
     
 }
 
 .header__fondo {
     width: 100%;
-    height: 100%;
+    height: 400px;
     max-width: 100%;
     border: 10px solid rgba(0, 153, 173, 0.81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.header__titulo{
+
+    text-align: center;
+    font-size: 100px;
+    user-select: none;
+
+
 }
 
 
@@ -378,7 +428,6 @@ body[data-bs-theme="light"] a{
     display: inline-block;
     height: 2px;
     width: 100%;
-    background: var(--white);
     position: relative;
     top: -29px;
     z-index: 1;
@@ -411,6 +460,8 @@ body[data-bs-theme="light"] a{
 }
 
 /*nosotros1*/
+
+
 
 article {
     display: flex;
@@ -482,8 +533,6 @@ article {
 
 
 
-
-
 .nos_iconos {
 
     width: 200px;
@@ -491,10 +540,32 @@ article {
 
 }
 
+
+
 .btn-productos {
 
-    background-color: #950101;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 30px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: inset;
+    font-size: 15px;
+    transition: .8s ease all;   
+    box-shadow: 2px -4px 30px 6px rgba(190, 190, 190, 0.81);
+    border: 2px solid rgba(10, 10, 10, 0.856);
+    
+}
 
+.btn-productos:hover {
+    
+    text-decoration: none;
+    transition: .5s;
+    transform: scale(1.2);
+    background-color: rgba(0, 197, 223, 0.81);
+    color: #f1fcff;
+    border: 2px solid rgba(0, 137, 155, 0.856);
+    
 }
 
 /*Contactanos*/
@@ -502,15 +573,26 @@ article {
 .form_con{
 
     border: 2px solid #333;
+    background-color: #f1fbfd;
     padding: 5px 20px 20px 20px;
     border-radius: 3px;
     box-shadow: -2px -4px 17px 6px rgba(0, 153, 173, 0.81);
+    
 
 }
 
 #textarea{
 
 resize: none;
+
+}
+
+.contactame{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/img/wave.svg);
+    
 
 }
 
@@ -529,9 +611,12 @@ resize: none;
 
 .footer{
 
-    -moz-border-radius: 12px;
-    border-radius: 12px;
     box-shadow: 1px 1px 15px 17px rgba(0, 153, 173, 0.81);
+    background-image: linear-gradient(to bottom, rgba(0, 153, 173, 0.856), rgba(0, 153, 173, 0.753), rgba(82, 229, 248, 0.81), rgb(203, 247, 247));
+    border-top: 2px solid rgba(207, 249, 255, 0.856);
+    border-left: 2px solid rgba(245, 254, 255, 0.856);
+    border-right: 2px solid rgba(237, 253, 255, 0.856);
+    border-radius: 15px;
 
 }
 
@@ -543,20 +628,29 @@ resize: none;
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     .contenedor {
-        width: 95%;
+        width: 100%;
         max-width: 10000px;
-        margin: 0px 0px 0px 20px;
+        
         grid-template-areas: 
             "header_bann  header_bann header_bann header_bann "
             "menu menu menu menu "
             "header header header  header"
             "container container container  container"
-            "productos productos productos productos"
-            " sbrnosotros sbrnosotros sbrnosotros sbrnosotros "
-            "containerfluid containerfluid containerfluid containerfluid "
+            "proyect_view proyect_view proyect_view proyect_view"
+            " sobre_mi sobre_mi sobre_mi sobre_mi "
+            "contactame contactame contactame contactame "
             "footer footer  footer footer ";
+    }
+
+    .image-wrapper{
+
+        margin: 0  ;
+    }
+    .image-wrapper2{
+
+        margin: 0;
     }
 
     .menu{
@@ -567,9 +661,18 @@ resize: none;
         justify-content: center;
         align-content: center;
         
-        
+    }
+
+    .contactos, .inicio_sesion{
+
+        position: relative;
+        display: inline;
+        width: -100px;
+        height: -100px;
 
     }
+
+
 
     .menu .menu__item{
 
@@ -606,6 +709,13 @@ resize: none;
 
     }
 
+    .col-10-sm {
+        
+        max-width: 83.33333%;
+    }
+
+    
+
     figure {
         
         display: block;
@@ -618,6 +728,88 @@ resize: none;
 
     }
 
+    figcaption .content-wrapper2{
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+
+    .desktop {
+        display: none; /* Oculta los elementos con clase "desktop" */
+    }
+    .navbar_mobile {
+        display: inline;
+         /* Muestra el navbar móvil */
+    }
+
+    .navbar-brand img {
+        margin-left: 50px;
+     }
+
+    .navbar-collapse {
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        display: none;
+    }
+    .navbar-collapse.show {
+        display: block;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        color: #000;
+        text-align: center;
+    }
+    }
+
+    .flex_ban{
+
+        justify-content: space-between;
+    }
+    
+    /* Estilos para el botón del navbar */
+    .navbar-toggler-icon {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-square2-512.png');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border: none;
+    
+    }
+    
+    /* Estilos para el menú principal */
+    .navbar-nav {
+    margin-left: auto;
+    }
+    
+    .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    .navbar-nav .nav-link:hover {
+    background-color: rgba(255,255,255,0.2);
+    }
     
     
     .nos_iconos {
@@ -640,4 +832,3 @@ resize: none;
         font-size: 60px;
 
     }
-}
