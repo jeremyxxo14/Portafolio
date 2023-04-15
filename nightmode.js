@@ -52,13 +52,12 @@ window.onload = () => {
 // función que oculta el icono de carga después de 5 segundos
 function ocultarCarga() {
     setTimeout(function() {
-      document.getElementById("loader-wrapper").style.display = "none";
+    document.getElementById("loader-wrapper").style.display = "none";
     }, 2000); // 5000 milisegundos = 5 segundos
-  }
-  
+}
+
   // evento que se ejecuta cuando la página ha cargado completamente
-  window.addEventListener("load", function() {
+window.addEventListener("load", function() {
     ocultarCarga();
-  });
-  
+});
 
