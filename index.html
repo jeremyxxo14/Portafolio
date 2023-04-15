@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/whatsapp.css">
-    <script src="index.js"></script>
+    <script src="nightmode.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -21,6 +21,61 @@
 
 <body data-bs-theme="light">
     <div class="contenedor">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div id="loader-container">
+                <i class="fa fa-spinner fa-spin"></i>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        
+        <style>
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        #loader {
+            border: 10px solid #3498db;
+            border-top: 10px solid #f1f1f1;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 2s linear infinite;
+        }
+        .loader-section {
+            position: fixed;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background: #f1f1f1;
+        }
+        .loader-section.section-left {
+            left: 0;
+        }
+        .loader-section.section-right {
+            right: 0;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #loader-container {
+            position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        </style>
         <div class="header_bann">
             <div class="flex_ban">
                 <div class="lgo_tit">
@@ -49,12 +104,12 @@
                     <button onclick="CambiarTema()" class="btn rounded-fill"><i id="dl-icon"
                             class="bi bi-moon-fill"></i></button>
                 </div>
-                <div class="navbar_mobile navbar-expand-lg navbar-light bg-light">
+                <div class="navbar_mobile navbar-expand-lg navbar-light bg-moon" data-bs-theme="light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse " id="navbarNav" data-bs-theme="light">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#Proyectos1">Mis Proyectos</a>
@@ -66,8 +121,7 @@
                                 <a class="nav-link" href="#contactos">Contactos</a>
                             </li>
                             <li class="nav-item">
-                                <button onclick="CambiarTema()" class="btn rounded-fill"><i id="dl-icon"
-                                    class="bi bi-moon-fill"></i></button>
+                                <button onclick="CambiarTema()" class="btn rounded-fill"><i id="tema-btn" class="bi bi-moon-fill"></i></button>
                             </li>
                         </ul>
                     </div>
@@ -241,13 +295,13 @@
                     </figure>
                 </article>
                 <div class="row justify-content-center" style="margin: 40px 0px;">
-                    <div class="col-6 col-lg-3 py-1">
+                    <div class="col-4 col-lg-3 py-1">
                         <img src="img/20220814_175635.jpg" alt="image 1" class="img-fluid">
                     </div>
-                    <div class="col-6 col-lg-3 py-1">
+                    <div class="col-4 col-lg-3 py-1">
                         <img src="img/20220814_175618.jpg" alt="image 2" class="img-fluid">
                     </div>
-                    <div class="col-6 col-lg-3 py-1">
+                    <div class="col-4 col-lg-3 py-1">
                         <img src="img/20220814_172958.jpg" alt="image 3" class="img-fluid">
                     </div>
                 </div>
