@@ -25,25 +25,6 @@ const actualizarLoader = (tema) => {
     }
 }
 
-const actualizarCardf = (tema) => {
-    const flipcard_front = document.querySelector(".flip-card-front");
-    if (tema === "dark") {
-        flipcard_front.setAttribute("data-bs-theme", "dark");
-    } else {
-        flipcard_front.setAttribute("data-bs-theme", "light");
-    }
-}
-
-const actualizarCardb = (tema) => {
-    const flipcard_back = document.querySelector(".flip-card-back");
-    if (tema === "dark") {
-        flipcard_back.setAttribute("data-bs-theme", "dark");
-    } else {
-        flipcard_back.setAttribute("data-bs-theme", "light");
-    }
-}
-
-
 const temaOscuro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "dark");
     document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill white-icon");
@@ -52,8 +33,6 @@ const temaOscuro = () => {
     actualizarNavbar("dark");
     actualizarCollapse("dark");
     actualizarLoader("dark");
-    actualizarCardf("dark");
-    actualizarCardb("dark");
 }
 
 const temaClaro = () => {
@@ -64,8 +43,6 @@ const temaClaro = () => {
     actualizarNavbar("light");
     actualizarCollapse("light");
     actualizarLoader("light");
-    actualizarCardf("light");
-    actualizarCardb("light"); 
 }
 
 const CambiarTema = () => {
