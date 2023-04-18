@@ -108,6 +108,14 @@ body[data-bs-theme="dark"] .contactame{
     
 }
 
+body[data-bs-theme="dark"] .logo_grande{
+    
+    
+    background-image: url(/img/);
+    
+    
+}
+
 
 body[data-bs-theme="dark"] .footer{
     
@@ -665,10 +673,8 @@ resize: none;
 
 @media screen and (max-width: 768px) {
     .contenedor {
-        width: auto;
+        width: 100%;
         max-width: 10000px;
-        margin: auto;
-        padding: auto;
         grid-template-areas: 
             "header_bann  header_bann header_bann header_bann "
             "menu menu menu menu "
@@ -786,7 +792,7 @@ resize: none;
 
     .navbar-brand img {
         margin-left: 50px;
-     }
+    }
 
     .navbar-collapse {
         background-color: #fff;
@@ -802,6 +808,7 @@ resize: none;
     }
     .navbar-collapse.show {
         display: block;
+        margin-top: 25px;
     }
     .navbar-nav {
         display: flex;

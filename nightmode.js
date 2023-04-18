@@ -16,6 +16,16 @@ const actualizarCollapse = (tema) => {
     }
 }
 
+const actualizarLoader = (tema) => {
+    const loder = document.querySelector("#loader");
+    if (tema === "dark") {
+        navbarCollapse.setAttribute("data-bs-theme", "dark");
+    } else {
+        navbarCollapse.setAttribute("data-bs-theme", "light");
+    }
+}
+
+
 const temaOscuro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "dark");
     document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill white-icon");
@@ -23,6 +33,7 @@ const temaOscuro = () => {
     localStorage.setItem("tema", "dark");
     actualizarNavbar("dark");
     actualizarCollapse("dark");
+    actualizarLoader("dark"); // Agrega esta línea
 }
 
 const temaClaro = () => {
@@ -32,6 +43,7 @@ const temaClaro = () => {
     localStorage.setItem("tema", "light");
     actualizarNavbar("light");
     actualizarCollapse("light");
+    actualizarLoader("light"); // Agrega esta línea
 }
 
 const CambiarTema = () => {
@@ -49,15 +61,9 @@ window.onload = () => {
 }
 
 
-// función que oculta el icono de carga después de 5 segundos
-function ocultarCarga() {
-    setTimeout(function() {
-    document.getElementById("loader-wrapper").style.display = "none";
-    }, 2000); // 5000 milisegundos = 5 segundos
-}
-
-  // evento que se ejecuta cuando la página ha cargado completamente
 window.addEventListener("load", function() {
-    ocultarCarga();
-});
+    var loader = document.getElementById("loader");
+    loader.style.display = "none";
+  }); 
+
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/whatsapp.css">
     <script src="nightmode.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
@@ -21,61 +22,10 @@
 
 <body data-bs-theme="light">
     <div class="contenedor">
-        <div id="loader-wrapper">
-            <div id="loader"></div>
-            <div id="loader-container">
-                <i class="fa fa-spinner fa-spin"></i>
-            </div>
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
+        <div id="loader" class="loader" data-bs-theme="dark">
+            <div class="spinner"></div>
+            <div class="loader-text">Cargando...</div>
         </div>
-        
-        <style>
-        #loader-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #f1f1f1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-        #loader {
-            border: 10px solid #3498db;
-            border-top: 10px solid #f1f1f1;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            animation: spin 2s linear infinite;
-        }
-        .loader-section {
-            position: fixed;
-            top: 0;
-            width: 50%;
-            height: 100%;
-            background: #f1f1f1;
-        }
-        .loader-section.section-left {
-            left: 0;
-        }
-        .loader-section.section-right {
-            right: 0;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        #loader-container {
-            position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
-        </style>
         <div class="header_bann">
             <div class="flex_ban">
                 <div class="lgo_tit">
