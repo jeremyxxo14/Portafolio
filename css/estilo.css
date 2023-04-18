@@ -108,15 +108,6 @@ body[data-bs-theme="dark"] .contactame{
     
 }
 
-body[data-bs-theme="dark"] .logo_grande{
-    
-    
-    background-image: url(/img/);
-    
-    
-}
-
-
 body[data-bs-theme="dark"] .footer{
     
     box-shadow: 1px 1px 15px 17px rgba(87,0,0,0.81);
@@ -171,6 +162,8 @@ body[data-bs-theme="light"] a{
     transform: rotate(360deg);
     }
 }
+
+
 
 
 /*CONTENEDOR*/
@@ -359,9 +352,7 @@ body[data-bs-theme="light"] a{
     font-size: 15px;
 }
 
-.btn {
-    margin-left: 20px;
-}
+
 
 /*Navbar*/
 
@@ -810,22 +801,24 @@ resize: none;
         display: block;
         margin-top: 25px;
     }
+
     .navbar-nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
     }
+
     .nav-item {
         margin: 10px 0;
     }
 
-    .nav-link {
+    .nav-link-item {
         font-size: 1.2rem;
-        color: #000;
         text-align: center;
+        color: #000000;
     }
-    }
+    
 
     .flex_ban{
 
@@ -834,31 +827,27 @@ resize: none;
     
     /* Estilos para el botón del navbar */
     .navbar-toggler-icon {
-    background-image: url('https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-square2-512.png');
     background-size: contain;
     width: 40px;
     height: 40px;
     border: none;
-    
     }
+
     
     /* Estilos para el menú principal */
     .navbar-nav {
     margin-left: auto;
     }
     
-    .navbar-nav .nav-link {
-    color: #fff;
-    font-size: 1.2rem;
+    .navbar-nav .nav-link-item {
+    font-size: 1.4rem;
     text-transform: uppercase;
     margin-right: 10px;
     padding: 10px;
     border-radius: 5px;
     }
     
-    .navbar-nav .nav-link:hover {
-    background-color: rgba(255,255,255,0.2);
-    }
+    
     
     
     .nos_iconos {
@@ -870,25 +859,32 @@ resize: none;
     }
 
     .navbar_mobile[data-bs-theme="dark"] {
+        background-color: #830000;
+
         
-        color: #fff;
     }
 
     .navbar-collapse[data-bs-theme="dark"]{
 
-        background-color: #a80000;
+        background-color: #360000;
 
     }
 
     .navbar-collapse.show[data-bs-theme="light"]{
 
-        background-color: #00c8ff;
+        background-color: #00b0e0;
 
     }
     
     .navbar_mobile[data-bs-theme="light"] {
-        background-color: #0095ba;
-        color: #333;
+        background-color: #00b2df;
+
+    }
+
+    .navbar-toggler{
+
+        border-radius: 10px;
+
     }
 
     body{
@@ -903,3 +899,4 @@ resize: none;
         font-size: 60px;
 
     }
+}
