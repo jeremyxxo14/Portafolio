@@ -19,9 +19,27 @@ const actualizarCollapse = (tema) => {
 const actualizarLoader = (tema) => {
     const loder = document.querySelector("#loader");
     if (tema === "dark") {
-        navbarCollapse.setAttribute("data-bs-theme", "dark");
+        loder.setAttribute("data-bs-theme", "dark");
     } else {
-        navbarCollapse.setAttribute("data-bs-theme", "light");
+        loder.setAttribute("data-bs-theme", "light");
+    }
+}
+
+const actualizarCardf = (tema) => {
+    const flipcard_front = document.querySelector(".flip-card-front");
+    if (tema === "dark") {
+        flipcard_front.setAttribute("data-bs-theme", "dark");
+    } else {
+        flipcard_front.setAttribute("data-bs-theme", "light");
+    }
+}
+
+const actualizarCardb = (tema) => {
+    const flipcard_back = document.querySelector(".flip-card-back");
+    if (tema === "dark") {
+        flipcard_back.setAttribute("data-bs-theme", "dark");
+    } else {
+        flipcard_back.setAttribute("data-bs-theme", "light");
     }
 }
 
@@ -33,7 +51,9 @@ const temaOscuro = () => {
     localStorage.setItem("tema", "dark");
     actualizarNavbar("dark");
     actualizarCollapse("dark");
-    actualizarLoader("dark"); // Agrega esta línea
+    actualizarLoader("dark");
+    actualizarCardf("dark");
+    actualizarCardb("dark");
 }
 
 const temaClaro = () => {
@@ -43,7 +63,9 @@ const temaClaro = () => {
     localStorage.setItem("tema", "light");
     actualizarNavbar("light");
     actualizarCollapse("light");
-    actualizarLoader("light"); // Agrega esta línea
+    actualizarLoader("light");
+    actualizarCardf("light");
+    actualizarCardb("light"); 
 }
 
 const CambiarTema = () => {
@@ -82,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
 
 
 
