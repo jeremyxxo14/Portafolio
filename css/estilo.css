@@ -163,6 +163,36 @@ body[data-bs-theme="light"] a{
     }
 }
 
+.scroll-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.btn-to-top {
+    display: inline-block;
+    background-color: #c4c4c4;
+    color: #555;
+    padding: 10px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.btn-to-top:hover {
+    background-color: #555;
+    color: white;
+}
+
+.btn-to-top.active {
+    opacity: 1;
+}
+
 
 
 

@@ -60,10 +60,32 @@ window.onload = () => {
 
 }
 
-
 window.addEventListener("load", function() {
     var loader = document.getElementById("loader");
     loader.style.display = "none";
 }); 
+
+window.addEventListener("scroll", function() {
+    const btnToTop = document.querySelector("#btn-to-top");
+    if (window.pageYOffset > 100) {
+    btnToTop.classList.add("active");
+    } else {
+    btnToTop.classList.remove("active");
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".btn-to-top").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+
+
+
+
+
 
 
