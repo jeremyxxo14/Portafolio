@@ -35,7 +35,7 @@ const temaOscuro = () => {
     actualizarLoader("dark");
 }
 
-const temaClaro = () => {
+const temaClaro = () => { 
     document.querySelector("body").setAttribute("data-bs-theme", "light");
     document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
     document.querySelector("#tema-btn").setAttribute("class", "bi bi-moon-fill");
