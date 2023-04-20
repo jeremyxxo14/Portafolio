@@ -101,7 +101,7 @@ body[data-bs-theme="dark"] .form_con{
 body[data-bs-theme="dark"] .contactame{
     
     
-    background-image: url(/img/wave\ \(2\).svg);
+    background-image: url(/Portafolio/img/wave\ \(2\).svg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -434,7 +434,7 @@ body[data-bs-theme="light"] a{
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-image: url(/img/DALL·E\ 2023-04-04\ 11.12.58\ -\ wallpaper\ para\ celular\ s20+\ de\ el\ espacio\ en\ donde\ se\ vea\ la\ tierra\ y\ la\ luna\ .png);
+    background-image: url(../img/DALL·E\ 2023-04-04\ 11.12.58\ -\ wallpaper\ para\ celular\ s20+\ de\ el\ espacio\ en\ donde\ se\ vea\ la\ tierra\ y\ la\ luna\ .png);
     background-repeat: no-repeat;
     
 }
@@ -633,6 +633,14 @@ article {
     
 }
 
+.mimg .img-fluid{
+
+    box-shadow: 8px 20px 15px 12px rgba(17, 17, 17, 0.856);
+    
+
+}
+
+
 /*Contactanos*/
 
 .form_con{
@@ -656,7 +664,7 @@ resize: none;
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(/img/wave.svg);
+    background-image: url(/Portafolio/img/wave.svg);
     
 
 }
