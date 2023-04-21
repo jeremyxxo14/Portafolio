@@ -98,6 +98,8 @@ window.addEventListener("load", function() {
     loader.style.display = "none";
 }); 
 
+
+
 window.addEventListener("scroll", function() {
     const btnToTop = document.querySelector("#btn-to-top");
     if (window.pageYOffset > 100) {
@@ -124,6 +126,24 @@ function cargarNuevaPagina() {
         document.getElementById("login-container").innerHTML = this.responseText;
     }
     };
+    xhttp.open("GET", "/Portafolio/html/register.html", true);
+    xhttp.send();
+}
+
+function cargarNuevaPagina() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Actualiza el contenido del contenedor de inicio de sesión
+            document.getElementById("login-container").innerHTML = this.responseText;
+            
+            // Agrega una pausa de 500ms antes de ocultar el loader
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+            }, 100);
+        }
+    };
+    
     xhttp.open("GET", "/Portafolio/html/register.html", true);
     xhttp.send();
 }
