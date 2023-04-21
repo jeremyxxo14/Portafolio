@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,51 +21,11 @@
 </head>
 <body data-bs-theme="light">
     <div class="contenedor">  
-        <div class="header_bann">
-            <div class="flex_ban">
-                <div class="lgo_tit">
-                    <a style="text-decoration: none;" href="../index.html" data-bs-theme="dark">
-                        <img class="logo logo_grande " src="/Portafolio/img/Pantera blanca.png" alt="">
-                    </a>
-                    <a style="text-decoration: none;" href="index.html">
-                        <h3 class="bann-titulo">Jeremyxxo</h3>
-                    </a>
-                </div>
-                <div class="contactos desktop" data-bs-theme="dark">
-                    <a href="https://api.whatsapp.com/send?phone=+56961342677&text=Hola!!%20Te%20estamos%20buscando%20para%20trabajar%20de%20programador"
-                        class="contactos_bann">
-                        <img src="/Portafolio/iconos/linea-directa.png" alt="">
-                        +569 61342677
-                    </a>
-                    <a href="mailto:jeremyxxo@gmail.com" class="contactos_bann">
-                        <img src="/Portafolio/iconos/gmail.png" alt="Ícono de Gmail">
-                        jeremyxxo@gmail.com
-                    </a>
-                </div>
-                <div class="inicio_sesion desktop">
-                    <button onclick="CambiarTema()" class="btn rounded-fill"><i id="dl-icon"
-                            class="bi bi-moon-fill"></i></button>
-                </div>
-                <div class="navbar_mobile navbar-expand-lg navbar-light bg-moon" data-bs-theme="light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarNav" data-bs-theme="light">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <button onclick="CambiarTema()" class="btn rounded-fill"><i id="tema-btn" class="bi bi-moon-fill"></i></button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="login-container" class="Login-container" >
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-sm-10 text-center">
                     <div class="login-box" data-bs-theme="light">
-                        <p>Login</p>
+                        <p>Registro</p>
                         <form>
                             <div class="user-box">
                                 <input required="" name="" type="text">
@@ -75,35 +34,24 @@
                             <div class="user-box">
                                 <input required="" name="" type="password">
                                 <label>Contraseña</label>
-                                <a href="" class="b2">Olvidaste tu contraseña?</a>
                             </div>
-                            <a href="#">
+                            <div class="user-box">
+                                <input required="" name="" type="password">
+                                <label>repetir Contraseña</label>
+                            </div>
+                            <a href="#" onclick="cargarNuevaPagina();">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                Enviar
+                                Confirmar
                             </a>
                         </form>
-                        <p>No Tienes una Cuenta? <a onclick="cargarNuevaPagina();" class="a2">Registrate!</a></p>
+                        <p>Tienes una cuenta? <a href="" class="a2">Ingresa!</a></p>
                     </div>
                 </div>
             </div>  
         </div>
-        <footer class="footer">
-            <div class="col-auto">
-                <a href="#">
-                    <img src="/Portafolio/iconos/facebook.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="/Portafolio/iconos/instagram.png" alt="">
-                </a>
-                <a href="#">
-                    <img src="/Portafolio/iconos/github.png" alt="">
-                </a>
-            </div>
-        </footer>
-    </div>
 
     <div id="loader" class="loader" data-bs-theme="dark">
         <div class="spinner"></div>
