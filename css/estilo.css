@@ -795,11 +795,14 @@ resize: none;
 
     }
 
-    .col-10-sm {
-        
-        max-width: 83.33333%;
-    }
+.overlay-texto{
 
+    font-size: 10px;
+
+}
+
+
+    
     
 
     figure {
