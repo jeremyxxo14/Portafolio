@@ -43,6 +43,15 @@ const actualizarCardb = (tema) => {
     }
 }
 
+const actualizarini_sesion = (tema) => {
+    const inisesion = document.querySelector(".login-box");
+    if (tema === "dark") {
+        inisesion.setAttribute("data-bs-theme", "dark");
+    } else {
+        inisesion.setAttribute("data-bs-theme", "light");
+    }
+}
+
 
 const temaOscuro = () => {
     document.querySelector("body").setAttribute("data-bs-theme", "dark");
@@ -54,6 +63,7 @@ const temaOscuro = () => {
     actualizarLoader("dark");
     actualizarCardf("dark");
     actualizarCardb("dark");
+    actualizarini_sesion("dark");
 }
 
 const temaClaro = () => {
@@ -66,6 +76,7 @@ const temaClaro = () => {
     actualizarLoader("light");
     actualizarCardf("light");
     actualizarCardb("light"); 
+    actualizarini_sesion("light"); 
 }
 
 const CambiarTema = () => {
