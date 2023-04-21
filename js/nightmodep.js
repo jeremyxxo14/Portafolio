@@ -165,3 +165,4 @@ function cargarOlvidocontra() {
     xhttp.open("GET", "/Portafolio/html/resta_contra.html", true);
     xhttp.send();
 }
+
