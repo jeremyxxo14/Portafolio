@@ -51,7 +51,7 @@ body[data-bs-theme="dark"] a{
 
 body[data-bs-theme="dark"] .header{
     
-    background-image: url(../img/siora-photography-228Ug-nLxx8-unsplash.jpg);
+    background-image: url(../img/prism.png);
     color: #fff;
     
 }
@@ -442,7 +442,7 @@ body[data-bs-theme="light"] a{
 
 .header__fondo {
     width: 100%;
-    height: 700px;
+    height: 400px;
     max-width: 100%;
     border: 10px solid rgba(0, 153, 173, 0.81);
     display: flex;
@@ -465,7 +465,9 @@ body[data-bs-theme="light"] a{
 
 
 
-/*Nosotros*/
+/*container*/
+
+
 
 .nosotros {
     margin-bottom: 60px;
@@ -523,7 +525,7 @@ body[data-bs-theme="light"] a{
     border-bottom: 1px solid rgba(0, 153, 173, 0.81);
 }
 
-/*nosotros1*/
+/*proyectview*/
 
 
 

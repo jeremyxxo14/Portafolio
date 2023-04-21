@@ -130,7 +130,7 @@ function cargarNuevaPagina() {
     xhttp.send();
 }
 
-function cargarNuevaPagina() {
+function cargarRegister() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -145,5 +145,23 @@ function cargarNuevaPagina() {
     };
     
     xhttp.open("GET", "/Portafolio/html/register.html", true);
+    xhttp.send();
+}
+
+function cargarOlvidocontra() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Actualiza el contenido del contenedor de inicio de sesión
+            document.getElementById("login-container").innerHTML = this.responseText;
+            
+            // Agrega una pausa de 500ms antes de ocultar el loader
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+            }, 100);
+        }
+    };
+    
+    xhttp.open("GET", "/Portafolio/html/resta_contra.html", true);
     xhttp.send();
 }
