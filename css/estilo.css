@@ -554,11 +554,13 @@ article {
     font-size: small;
     margin: auto;
     
+    
 }
 
 .image-wrapper{
     text-align: center;
     margin-left: 50px;
+    
 
 }
 
@@ -597,14 +599,16 @@ article {
 .image-wrapper2 {  
     text-align: center;  
     margin-right: 50px;
+    
 }
 
 
 
 .nos_iconos {
 
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
+    
 
 }
 
@@ -896,7 +900,7 @@ resize: none;
     .nos_iconos {
         
         width: 170px;
-        height: 170px;
+        height: 250px;
         margin: 20px;
         
     }
